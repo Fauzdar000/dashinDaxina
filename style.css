@@ -240,7 +240,7 @@ body {
 
     .content {
         gap: 20px;
-        margin-bottom: 300px;
+        /* margin-bottom: 300px; */
     }
 
     .qr-scan {
