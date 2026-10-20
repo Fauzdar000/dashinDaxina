@@ -323,3 +323,52 @@ body {
         transition: none !important;
     }
 }
+
+/* Download QR Button */
+.download-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    padding: 13px 24px;
+    margin-top: 5px;
+
+    background: linear-gradient(135deg, #ffd780, #f5ad42);
+    color: #641b16;
+
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+
+    border: 2px solid #ffe7ad;
+    border-radius: 50px;
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.25);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    cursor: pointer;
+}
+
+.download-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(255, 215, 128, 0.4);
+}
+
+.download-btn:active {
+    transform: scale(0.96);
+}
+
+.download-btn:focus-visible {
+    outline: 3px solid white;
+    outline-offset: 4px;
+}
+
+/* Mobile responsive */
+@media (max-width: 480px) {
+    .download-btn {
+        width: auto;
+        max-width: 100%;
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+}
